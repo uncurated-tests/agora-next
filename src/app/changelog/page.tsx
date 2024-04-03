@@ -2,6 +2,8 @@ import { formatFullDate } from "@/lib/utils";
 import styles from "./changelog.module.scss";
 import { cn } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata() {
   return {
     title: "Optimism Gov Client Changelog - Agora",
