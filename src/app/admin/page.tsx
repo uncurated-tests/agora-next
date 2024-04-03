@@ -3,13 +3,14 @@ import { fetchVotableSupply as apiFetchVotableSupply } from "@/app/api/common/vo
 import { fetchProposalTypes } from "@/app/admin/actions";
 import Tenant from "@/lib/tenant/tenant";
 
+export const dynamic = "force-dynamic";
+
 async function fetchVotableSupply() {
   "use server";
   return apiFetchVotableSupply();
 }
 
 export default async function Page() {
-
   const { ui } = Tenant.current();
 
   if (!ui.toggle("admin")) {

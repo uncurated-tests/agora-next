@@ -11,8 +11,10 @@ import ProposalsList from "@/components/Proposals/ProposalsList/ProposalsList";
 import { proposalsFilterOptions, TENANT_NAMESPACES } from "@/lib/constants";
 import Tenant from "@/lib/tenant/tenant";
 
+export const dynamic = "force-dynamic";
+
 // Revalidate cache every 60 seconds
-export const revalidate = 60;
+// export const revalidate = 60;
 
 async function fetchProposals(filter, page = 1) {
   "use server";

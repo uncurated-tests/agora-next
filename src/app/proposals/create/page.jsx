@@ -5,6 +5,7 @@ import InfoPanel from "@/components/Proposals/ProposalCreation/InfoPanel";
 import Tenant from "@/lib/tenant/tenant";
 import styles from "./styles.module.scss";
 
+export const dynamic = "force-dynamic";
 
 async function getProposalSettingsList() {
   "use server";
